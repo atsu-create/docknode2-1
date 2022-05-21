@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  app:
+    image: node:16.13.2
+    environment:
+      - TZ=Asia/Tokyo
+      - DEBUG=app:*
+    tty: true
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./src:/app
+    working_dir: /app
+    command: npm run dev
