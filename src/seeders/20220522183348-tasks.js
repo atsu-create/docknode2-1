@@ -8,25 +8,25 @@ module.exports = {
       'tasks',
       [
         {
-          task: 'Write the blog article',
+          name: 'Write the blog article',
           done: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          task: 'Purchase new laptop PC',
+          name: 'Purchase new laptop PC',
           done: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          task: 'Go to swim',
+          name: 'Go to swim',
           done: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          task: 'Order a pizza',
+          name: 'Order a pizza',
           done: true,
           createdAt: new Date(),
           updatedAt: new Date(),
