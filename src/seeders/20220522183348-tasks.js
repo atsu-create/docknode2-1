@@ -3,30 +3,30 @@
 const db = require('../models/');
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert(
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert(
       'tasks',
       [
         {
-          name: 'Write the blog article',
+          task: 'Write the blog article',
           done: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: 'Purchase new laptop PC',
+          task: 'Purchase new laptop PC',
           done: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: 'Go to swim',
+          task: 'Go to swim',
           done: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: 'Order a pizza',
+          task: 'Order a pizza',
           done: true,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -36,7 +36,7 @@ module.exports = {
     );
   },
 
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Users', null, {});
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('Users', null, {});
   },
 };
