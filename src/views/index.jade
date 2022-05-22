@@ -15,7 +15,7 @@ block content
             onclick="this.closest('form').submit();"
           )
 
-        span.task= t.task
+        span.task= t.name
 
         form(action="delete", method="post")
           input(type='hidden' name='id' value=t.id)
