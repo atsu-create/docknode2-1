@@ -19,5 +19,6 @@ module.exports = {
     database: process.env.MYSQL_DATABASE,
     host: process.env.MYSQL_SERVER,
     dialect: 'mysql',
+    use_env_variable: DATABASE_URL, //変更
   },
 };
